@@ -20,10 +20,24 @@
       max-width: 1267px;
       margin: 0 auto;
     }
+    .pc {
+      display: block;
+    }
+    .sp {
+      display: none;
+    }
+    @media screen and (max-width: 480px) {
+      .pc {
+        display: none;
+      }
+      .sp {
+        display: block;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="main">
+  <div class="main pc">
     <img src="assets/images/img_01.jpg">
     <img src="assets/images/img_02.jpg">
     <img src="assets/images/img_03.jpg">
@@ -32,12 +46,16 @@
     <img src="assets/images/img_06.jpg">
     <img src="assets/images/img_07.jpg">
     <img src="assets/images/img_08.jpg">
-    <img src="assets/images/img_09.jpg">
-    <img src="assets/images/img_10.jpg">
-    <img src="assets/images/img_11.jpg">
-    <img src="assets/images/img_12.jpg">
-    <img src="assets/images/img_13.jpg">
-    <img src="assets/images/img_14.jpg">
+  </div>
+  <div class="main sp">
+    <img src="assets/images/img_sp_01.jpg">
+    <img src="assets/images/img_sp_02.jpg">
+    <img src="assets/images/img_sp_03.jpg">
+    <img src="assets/images/img_sp_04.jpg">
+    <img src="assets/images/img_sp_05.jpg">
+    <img src="assets/images/img_sp_06.jpg">
+    <img src="assets/images/img_sp_07.jpg">
+    <img src="assets/images/img_sp_08.jpg">
   </div>
 </body>
 </html>
