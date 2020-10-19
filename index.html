@@ -16,7 +16,7 @@
       padding: 0;
       width: 100%;
     }
-    .main {
+    .main .pre {
       max-width: 1267px;
       margin: 0 auto;
     }
@@ -26,6 +26,45 @@
     .sp {
       display: none;
     }
+
+    .content {
+      position: relative;
+      width: 960px;
+      margin: 0 auto;
+    }
+
+    #hero {
+      background-image: url(assets/images/hero-bg.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 774px;
+    }
+    #hero .covid-19-btn {
+      display: block;
+      margin-top: 40px;
+    }
+
+    .contact-link {
+      background-image: url(assets/images/contact-link-bg.png);
+      background-repeat: repeat-x;
+      background-position: top;
+    }
+    .contact-link .tel-btn {
+      position: absolute;
+      right: 141px;
+      top: 183px;
+    }
+    .contact-link .mail-btn {
+      position: absolute;
+      left: 276px;
+      bottom: 44px;
+    }
+
+    #exec-message .content {
+      width: 1280px;
+    }
+
     @media screen and (max-width: 480px) {
       .pc {
         display: none;
@@ -38,21 +77,44 @@
 </head>
 <body>
   <div class="main pc">
-    <img src="assets/images/img_a_01.jpg">
-    <img src="assets/images/img_a_02.jpg">
-    <img src="assets/images/img_a_03.jpg">
-    <img src="assets/images/img_a_04.jpg">
-    <img src="assets/images/img_a_05.jpg">
-    <img src="assets/images/img_a_06.jpg">
-    <img src="assets/images/img_a_07.jpg">
-    <img src="assets/images/img_a_08.jpg">
-    <img src="assets/images/img_b_01.jpg">
-    <img src="assets/images/img_b_02.jpg">
-    <img src="assets/images/img_b_03.jpg">
-    <img src="assets/images/img_b_04.jpg">
-    <img src="assets/images/img_b_05.jpg">
-    <img src="assets/images/img_b_06.jpg">
-    <img src="assets/images/img_b_07.jpg">
+    <section id="hero">
+      <div class="content">
+        <img src="assets/images/hero-txt.png">
+        <a class="covid-19-btn" href="#">
+          <img src="assets/images/covid-19-btn.png">
+        </a>
+      </div>
+    </section>
+    <section class="contact-link">
+      <div class="content">
+        <img src="assets/images/contact-link-section.png">
+        <a class="tel-btn" href="#">
+          <img src="assets/images/contact-link-tel-btn.png">
+        </a>
+        <a class="mail-btn" href="#">
+          <img src="assets/images/contact-link-mail-btn.png">
+        </a>
+      </div>
+    </section>
+    <section id="exec-message">
+      <div class="content">
+        <img src="assets/images/exec-message.jpg">
+      </div>
+    </section>
+    <div class="pre">
+      <img src="assets/images/img_a_04.jpg">
+      <img src="assets/images/img_a_05.jpg">
+      <img src="assets/images/img_a_06.jpg">
+      <img src="assets/images/img_a_07.jpg">
+      <img src="assets/images/img_a_08.jpg">
+      <img src="assets/images/img_b_01.jpg">
+      <img src="assets/images/img_b_02.jpg">
+      <img src="assets/images/img_b_03.jpg">
+      <img src="assets/images/img_b_04.jpg">
+      <img src="assets/images/img_b_05.jpg">
+      <img src="assets/images/img_b_06.jpg">
+      <img src="assets/images/img_b_07.jpg">
+    </div>
   </div>
   <div class="main sp">
     <img src="assets/images/img_sp_a_01.jpg">
